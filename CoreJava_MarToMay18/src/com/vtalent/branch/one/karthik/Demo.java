@@ -1,20 +1,19 @@
 package com.vtalent.branch.one.karthik;
 
-public class A
-{
+public class Demo {
 int i,j;
-A()
+Demo()
 {
 	i=i+j;
 	j=i+j;
 }
-	A(int i)
+	Demo(int i)
 	{
 		this();
      	this.i=this.i+i;
 		j=this.i+i;
 	}
-	A(int i,int j)
+	Demo(int i,int j)
 	{
 		this(j);
 		this.i=this.i+i;
@@ -22,20 +21,18 @@ A()
 		
 	}
 
-	public static void main(String v[]) 
-	{
-		A d1=new A();
+	public static void main(String v[]) {
+		Demo d1=new Demo();
 		System.out.println(d1.i);
 		System.out.println(d1.j);
 		/*Demo d2=new Demo(2);
 		System.out.println(d2.i);
 		System.out.println(d2.j);*/
-        A d3=new A(5,3);
+        Demo d3=new Demo(5,3);
 		System.out.println(d3.i);
-	    System.out.println(d3.j);
-	}	
-
+		System.out.println(d3.j);
+		
 
 	}
 
-
+}
