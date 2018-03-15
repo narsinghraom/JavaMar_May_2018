@@ -8,6 +8,4 @@ public class B {
 		int k=b.i+b.j;
 		System.out.println(k);
 	}
-	
-
-}
+	}
