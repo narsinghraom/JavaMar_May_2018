@@ -18,7 +18,7 @@ public class ArrayEx {
 		i= function (f);
 		for (int m=0;m<=i.length-1;m++)
 		{
-			System.out.println("float value="+ f[m]+" "+"int value="+i[m]);
+			System.out.println("float value="+ f[m] +" "+"int value="+i[m]);
 		}
 	}
 
