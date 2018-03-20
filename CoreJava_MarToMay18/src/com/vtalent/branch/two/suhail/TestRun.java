@@ -46,18 +46,30 @@ class DemoTwo extends DemoOne{
 
 }
 
+//public class TestRun
+//{
+//	public static void main(String[] args) {
+//		DemoOne d1 = new DemoOne();
+//		d1.function(2);
+//		int k = d1.functoin(2, 3);
+//		float f1 = d1.function((float)k);
+//		System.out.println(k + "  " + f1);
+//		DemoTwo d2 = new DemoTwo();
+//		d2.function(3);
+//		k = d2.function(k, k+1);
+//		f1 = d2.function(f1, f1+1.3f);
+//		System.out.println(k + "  " + f1);
+//	}
+//}
+
+
 public class TestRun
 {
 	public static void main(String[] args) {
-		DemoOne d1 = new DemoOne();
+		DemoOne d1 = new DemoTwo();
 		d1.function(2);
 		int k = d1.functoin(2, 3);
-		float f1 = d1.function((float)k);
-		System.out.println(k + "  " + f1);
-		DemoTwo d2 = new DemoTwo();
-		d2.function(3);
-		k = d2.function(k, k+1);
-		f1 = d2.function(f1, f1+1.3f);
-		System.out.println(k + "  " + f1);
+		//float f1 = d1.function(1.0f, 1.0f);
+		float f2 = d1.function(1.0f);
 	}
 }
