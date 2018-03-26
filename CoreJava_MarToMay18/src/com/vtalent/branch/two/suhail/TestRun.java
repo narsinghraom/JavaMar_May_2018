@@ -51,7 +51,7 @@ class DemoTwo extends DemoOne{
 //	public static void main(String[] args) {
 //		DemoOne d1 = new DemoOne();
 //		d1.function(2);
-//		int k = d1.functoin(2, 3);
+//		intm k = d1.functoin(2, 3);
 //		float f1 = d1.function((float)k);
 //		System.out.println(k + "  " + f1);
 //		DemoTwo d2 = new DemoTwo();
@@ -71,5 +71,6 @@ public class TestRun
 		int k = d1.functoin(2, 3);
 		//float f1 = d1.function(1.0f, 1.0f);
 		float f2 = d1.function(1.0f);
+		System.out.println(k + " " + f2);
 	}
 }
