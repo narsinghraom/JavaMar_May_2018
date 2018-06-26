@@ -14,6 +14,16 @@ public class Charan
 		System.out.println(a);
 		System.out.println(b);
 	}
+	public static Charan sathya()
+	{
+		Charan c3=new Charan();
+		Charan.c=c;
+		Charan.d=d;
+		System.out.println(c3.a);
+		System.out.println(c3.b);
+		System.out.println(c3);
+		return c3;
+	}
 	public static float venky(float f1,float f2)
 	{
 		c=f1;
@@ -32,6 +42,7 @@ public class Charan
 		Charan c3=new Charan();
 		c3.naresh(10,20);
 		Charan.venky(1.5f,2.3f);
+		Charan c=Charan.sathya();
 
 	}
 
