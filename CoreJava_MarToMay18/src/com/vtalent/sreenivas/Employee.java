@@ -1,5 +1,7 @@
 package com.vtalent.sreenivas;
 
+import java.util.Scanner;
+
 public class Employee {
 int empid;
 double empsal;
@@ -24,9 +26,20 @@ public static void displayData()
 		System.out.println(emp.empid+" "+emp.empsal+" "+emp.emobile);
 	}
 }
+public  void display()
+{
+	Scanner s=new Scanner(System.in);
+	System.out.print("enter the employee id="+empid);
+	int empid=s.nextInt();
+	System.out.println("employee sal="+empsal);
+	System.out.println("employee mobile="+emobile);
+}
 public static void main(String[] args)
 {
+	Employee e=new Employee();
 	insertData();
 	displayData();
+	e.display();
+	
 }
 }
