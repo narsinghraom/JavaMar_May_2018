@@ -7,7 +7,7 @@ public class Employee3
 	int empid;
 	double empsal;
 	long emobile;
-	static Employee[] emparray=new Employee[2];
+	static Employee[] emparray=new Employee[3];
 	
 	public static void insertData()
 	{
@@ -15,7 +15,8 @@ public class Employee3
 		{
 			Employee emp=new Employee();
 			emp.empid=50+i;
-			emp.empsal=20000*(5*i);
+			//emp.empsal=20000*(5*i);
+			emp.empsal=20000*(5*i)+2000;
 			emp.emobile=888633823+(i*2);
 			emparray[i]=emp;
 		}
@@ -29,7 +30,7 @@ public class Employee3
 			Scanner s=new Scanner(System.in);
 			System.out.println("enter the employee id");
 			int empid=s.nextInt();
-			if(emp.empid==50)
+			if(emp.empid==50+i)
 			{
 				System.out.println(emp.empid+" "+emp.empsal+" "+emp.emobile);
 			}
