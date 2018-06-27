@@ -1,4 +1,4 @@
-package com.vtalent.brach.sowmya;
+package com.vtalent.branch.sowmya;
 
 public class Amstrongnumber {
 	public static void main(String[] args)  {  
