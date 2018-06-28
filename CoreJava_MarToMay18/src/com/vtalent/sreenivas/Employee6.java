@@ -2,7 +2,7 @@ package com.vtalent.sreenivas;
 
 import java.util.Scanner;
 
-public class Employee3
+public class Employee6 
 {
 	int empid;
 	double empsal;
@@ -44,7 +44,6 @@ public class Employee3
 		// TODO Auto-generated method stub
 		insertData();
 		displayData();
-
 	}
 
 }
