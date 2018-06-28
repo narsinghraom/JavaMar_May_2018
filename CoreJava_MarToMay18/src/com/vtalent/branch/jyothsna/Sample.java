@@ -1,5 +1,6 @@
 package com.vtalent.branch.jyothsna;
 
-public class Sample {
-
+public class Sample 
+{
+	
 }

@@ -1,12 +1,15 @@
 package com.vtalent.saikrishna;
 
+import java.util.Scanner;
+
 public class ArrayEmployee 
 {
-	
 	int empid;
 	double esal;
 	long emobile;
-	
+	public static void setEmpArray(ArrayEmployee[] empArray) {
+		ArrayEmployee.empArray = empArray;
+	}
 	static ArrayEmployee[] empArray=new ArrayEmployee[4];
 	public static void insertData()
 	{
@@ -19,7 +22,6 @@ public class ArrayEmployee
 			empArray[i]=e;		
 		}
 	}
-	
 	public static void disp()
 	{
 		for(int i=0;i<=empArray.length-1;i++)
@@ -29,9 +31,29 @@ public class ArrayEmployee
 			System.out.println("employeeid="+emp.empid+"empsal="+emp.esal+"empmobile="+emp.emobile);
 		}
 	}
+	public void show()
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter employee id");
+		 int eid=s.nextInt();
+		 
+		 for(int i=0;i<=empArray.length-1;i++)
+		 {
+			 ArrayEmployee ae=(ArrayEmployee)empArray[i];
+			 
+			 if(ae.empid==eid)
+			 {
+				 System.out.println("id="+ae.empid+" sal="+ae.esal+" mobile="+ae.emobile);
+			 }
+		 }
+		
+	}
 	public static void main(String[] args) 
 	{
 		insertData();
 		disp();
+		ArrayEmployee ae=new ArrayEmployee();
+		ae.show();
+	//	ae.show();
 	}
 }
