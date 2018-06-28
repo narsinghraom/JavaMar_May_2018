@@ -1,5 +1,7 @@
 package com.vtalent.branch.sowmya;
 
+import java.util.Scanner;
+
 public class ArrayEmployee
 {
 	int eId;
@@ -26,6 +28,7 @@ public class ArrayEmployee
 		Scanner sc=new Scanner(System.in);
 	     int temp=sc.nextInt();
 		for(int i=0;i<=empArray.length-1;i++)
+		{
 			ArrayEmployee emp=(ArrayEmployee)empArray[i];
 			
 		
@@ -39,14 +42,13 @@ public class ArrayEmployee
 		}
 		}
 	
+	}
 
-
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		insertData();
 		displayData();
-		displayEmp();
-		
-		
+		displayEmp();	
 	}
 	public static void displayEmp()
 	{
