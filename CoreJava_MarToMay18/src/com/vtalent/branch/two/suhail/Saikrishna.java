@@ -1,10 +1,11 @@
 package com.vtalent.branch.two.suhail;
 
-public class Saikrishna {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class Saikrishna 
+{
+	public static void main(String[] args) 
+	{
+	
+		
+		
 	}
-
 }
