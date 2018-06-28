@@ -29,7 +29,7 @@ public static void displayData()
 		Scanner s=new Scanner(System.in);
 		System.out.println("enter the employee id");
 		int empid=s.nextInt();
-		if(emp.empid==50+i)
+		if(empid==50+i)
 		{
 			System.out.println(emp.empid+" "+emp.empsal+" "+emp.emobile);
 		}
