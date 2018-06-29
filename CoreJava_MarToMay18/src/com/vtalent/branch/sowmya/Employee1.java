@@ -16,7 +16,7 @@ package com.vtalent.branch.sowmya;
 			Employee1 emp=new Employee1();
 			emp.empid=300+i;
 			
-		emp.empsal=100*(5*i);
+		emp.empsal=10000*(5*i);
 			emp.emobile=924696+(i*2);
 			emparray[i]=emp;
 		}
