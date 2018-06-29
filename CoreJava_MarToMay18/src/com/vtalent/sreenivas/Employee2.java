@@ -13,18 +13,16 @@ public class Employee2
 		// TODO Auto-generated method stub
 		Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","sreenu");
 		Statement stmt=con.createStatement();
-	   String sql="select *from gopal1 where empid=101";
-	   ResultSet rs=stmt.executeQuery(sql);
+	  // String sql="select *from gopal1 where empid=101";
+		String sql="update gopal1 set sal=sal+2500 where empid=101";
+	   int rs=stmt.executeUpdate(sql);
 	  Scanner s=new Scanner(System.in);
 	   System.out.println("enter the empid");
 	   int eid=s.nextInt();
-	   while(rs.next())
-	   {
-		   System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3)+" "+rs.getInt(4)+" "+rs.getString(5));
-	   }
+	 System.out.println("one row is updated="+rs);
 	   con.close();
 	   stmt.close();
-	   rs.close();
+	   //rs.close();
 	}
 
 }
