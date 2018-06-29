@@ -13,8 +13,8 @@ public class Employee {
 	  for(int i=0;i<=empArray.length-1;i++)
 	  {
 		  Employee emp = new Employee();
-		  emp.eId=100+i;
-		  emp.eSalary=2500*(10+i);
+		  emp.eId=50+i;
+		  emp.eSalary=2500*(5+i);
 		  emp.eMobile=970042372+(i*2);
 		  empArray[i]=emp;
 	  }
@@ -35,7 +35,7 @@ public class Employee {
 	     
 	     Scanner sc = new Scanner(System.in);
 		 int empid = sc.nextInt();
-	     if(empid==(100+i)){
+	     if(empid==(50+i)){
 		  System.out.println("Id="+emp.eId+"Salary="+emp.eSalary+"Mobile="+emp.eMobile);
 	     }
 	     else
@@ -51,3 +51,4 @@ public class Employee {
 	  displayOneEmp();
   }
 }
+ 
