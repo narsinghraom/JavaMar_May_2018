@@ -58,7 +58,7 @@ public class Vtalent
 	{
 		insertData();
 		 displayEmp();
-		 displayOne();
+		displayOne();
 		// TODO Auto-generated method stub
 
 	}
