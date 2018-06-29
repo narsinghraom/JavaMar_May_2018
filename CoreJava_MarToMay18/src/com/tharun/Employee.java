@@ -30,6 +30,7 @@ public class Employee {
   public static void displayOneEmp()
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	  Scanner sc = new Scanner(System.in);
 	  System.out.println("enter the input");
 	  int temp = sc.nextInt();
@@ -39,6 +40,8 @@ public class Employee {
 		 System.out.println(empArray[i]);
 	   }
 =======
+=======
+>>>>>>> bc09feb8e7a372955e03b8e6eef61594470168c0
 	  
 	 for(int i=0;i<=empArray.length-1;i++) {
 	     Employee emp = (Employee)empArray[i];
@@ -52,7 +55,10 @@ public class Employee {
 	     {
 	    	 System.out.println("No data Found");
 	     }
+<<<<<<< HEAD
 >>>>>>> bc35308ec58aa9aa1c60b2f4fd9b10ebc96a9486
+=======
+>>>>>>> bc09feb8e7a372955e03b8e6eef61594470168c0
 	 }
    }
   
