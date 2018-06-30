@@ -1,4 +1,4 @@
-package com.vtalent.swathi;
+package src.com.vtalent.swathi;
 
  class Employee {
 	 int eid;

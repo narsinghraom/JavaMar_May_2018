@@ -1,4 +1,4 @@
-package com.vtalent.swathi;
+package src.com.vtalent.swathi;
 
  import java.util.Scanner;
 
@@ -38,17 +38,19 @@ package com.vtalent.swathi;
 	 					 for(int i=0;i<=empArray.length-1;i++)
 	 					 {
 	 						 Scanner sc=new Scanner(System.in);
-		 					 System.out.println("update the salary for employee"+" "+i);
+		 					 System.out.println("enter the input");
 		 					 int temp=sc.nextInt();
 		 					
 	 					 ArraySal1 emp=(ArraySal1)empArray[i];
-	 					 
-	 					emp.esalary=temp;
-	 					
-	 					
-	 						 System.out.println(emp.eid+" "+emp.esalary+" "+emp.emobile);
-	 					 
-	 					
+	 					 if(temp==(emp.eid))
+						 {
+							 System.out.println(emp.eid+" "+emp.esalary+" "+emp.emobile);
+							 System.out.println("enter the amount to update the salary");
+							 Scanner sc1=new Scanner(System.in);
+							 int s=sc1.nextInt();
+							 emp.esalary=emp.esalary+s;
+							  System.out.println(emp.eid+" "+emp.esalary+" "+emp.emobile);
+						 }
 	 					 
 	 				 }
 
