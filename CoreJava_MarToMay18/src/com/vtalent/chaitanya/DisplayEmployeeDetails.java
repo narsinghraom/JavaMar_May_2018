@@ -8,11 +8,11 @@ public class DisplayEmployeeDetails {
 		int eid;
 		double esalary;
 		long emobile;
-		static Employee[] empArray = new Employee[100];
+		static DisplayEmployeeDetails[] empArray = new DisplayEmployeeDetails[5];
 
 		public static void insertData() {
 			for (int i = 0; i <= empArray.length - 1; i++) {
-				Employee emp = new Employee();
+				DisplayEmployeeDetails emp = new DisplayEmployeeDetails();
 				emp.eid = 100 + i;
 				emp.esalary = 2500 * (10 + i);
 				emp.emobile = 949498712 + (i * 2);
@@ -27,7 +27,7 @@ public class DisplayEmployeeDetails {
 			System.out.println("enter id: ");
 			int tempEid = sc.nextInt();
 			for (int i = 0; i <= empArray.length - 1; i++) {
-				Employee emp = (Employee) empArray[i];
+				DisplayEmployeeDetails emp = (DisplayEmployeeDetails) empArray[i];
 				if (tempEid == emp.eid) {
 					System.out.println(emp.eid);
 					System.out.println(emp.esalary);
