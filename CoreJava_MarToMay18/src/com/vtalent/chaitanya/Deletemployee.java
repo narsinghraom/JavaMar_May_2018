@@ -1,4 +1,4 @@
-package com.vtalent.chaitanya;
+package src.com.vtalent.chaitanya;
 
 import java.util.Scanner;
 
@@ -7,11 +7,11 @@ public class Deletemployee {
 		int eid;
 		double esalary;
 		long emobile;
-		static Employee[] empArray = new Employee[10];
+		static Deletemployee[] empArray = new Deletemployee[10];
 
 		public static void insertData() {
 			for (int i = 0; i <= empArray.length - 1; i++) {
-				Employee emp = new Employee();
+				Deletemployee emp = new Deletemployee();
 				emp.eid = 100 + i;
 				emp.esalary = 2500 * (10 + i);
 				emp.emobile = 949498712 + (i * 2);
@@ -69,7 +69,7 @@ public class Deletemployee {
 			System.out.println("enter id: ");
 			int tempEid = sc.nextInt();
 			for (int i = 0; i <= empArray.length - 1; i++) {
-				Employee emp = (Employee) empArray[i];
+				Deletemployee emp = (Deletemployee) empArray[i];
 				if (tempEid == emp.eid) {
 					
 					System.out.println("eid: "+emp.eid);
@@ -86,7 +86,7 @@ public class Deletemployee {
 		public static void displayEmp() {
 			for(int i=0;i<=empArray.length-1;i++) {
 				
-				Employee emp=(Employee)empArray[i];
+				Deletemployee emp=(Deletemployee)empArray[i];
 				try{
 				
 				System.out.println("emp id= "+emp.eid);

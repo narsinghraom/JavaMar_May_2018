@@ -1,4 +1,4 @@
-package com.vtalent.chaitanya;
+package src.com.vtalent.chaitanya;
 
 import java.util.Scanner;
 
@@ -7,11 +7,11 @@ public class UpdateEmployee {
 	int eid;
 	double esalary;
 	long emobile;
-	static Employee[] empArray = new Employee[100];
+	static UpdateEmployee[] empArray = new UpdateEmployee[100];
 
 	public static void insertData() {
 		for (int i = 0; i <= empArray.length - 1; i++) {
-			Employee emp = new Employee();
+			UpdateEmployee emp = new UpdateEmployee();
 			emp.eid = 100 + i;
 			emp.esalary = 2500 * (10 + i);
 			emp.emobile = 949498712 + (i * 2);
@@ -49,7 +49,7 @@ public class UpdateEmployee {
 		System.out.println("enter id: ");
 		int tempEid = sc.nextInt();
 		for (int i = 0; i <= empArray.length - 1; i++) {
-			Employee emp = (Employee) empArray[i];
+			UpdateEmployee emp = (UpdateEmployee) empArray[i];
 			if (tempEid == emp.eid) {
 				System.out.println("eid: "+emp.eid);
 				System.out.println("esalary: "+emp.esalary);
