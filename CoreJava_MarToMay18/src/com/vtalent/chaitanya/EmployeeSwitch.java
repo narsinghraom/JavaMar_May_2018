@@ -1,4 +1,4 @@
-package src.com.vtalent.chaitanya;
+package com.vtalent.chaitanya;
 
 import java.util.Scanner;
 
@@ -89,7 +89,7 @@ public class EmployeeSwitch {
         System.out.println("2\t Update Employee");
         System.out.println("3\t Delete Employee");
         System.out.println("4\t Update Employee");
-       // System.out.println("5\t Display All Employee");
+        System.out.println("5\t Display All Employee");
 
 
         System.out.println("Please enter your choice:");
@@ -108,6 +108,8 @@ public class EmployeeSwitch {
                     break;
             case 4: update(); 
                      break;
+            case 5: displayEmp(); 
+            break;
             default: System.out.println("Invalid choice");
         }//end of switch
     }//end of the main method
