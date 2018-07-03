@@ -6,7 +6,7 @@ class Employee {
 	int eid;
 	double esalary;
 	long emobile;
-	static Employee[] empArray = new Employee[];
+	static Employee[] empArray = new Employee[5];
 
 	public static void insertData() {
 		for (int i = 0; i <= empArray.length - 1; i++) {
@@ -42,9 +42,27 @@ class Employee {
 	 * System.out.println("emp salary= "+emp.esalary);
 	 * System.out.println("emp mobile= "+emp.emobile); } }
 	 */
+	public static void update() {
+		Scanner sc = new Scanner(System.in);
 
+		System.out.println("enter id: ");
+		int tempEid = sc.nextInt();
+		for (int i = 0; i <= empArray.length - 1; i++) {
+			Employee emp = (Employee) empArray[i];
+			if (tempEid == emp.eid) {
+				System.out.println(emp.eid);
+				System.out.println(emp.esalary);
+				System.out.println(emp.emobile);
+			System.out.println("enter the salary: ");
+			emp.esalary=sc.nextInt();
+			empArray[i]=emp;
+				break;
+
+			}}
+		}
 	public static void main(String[] args) {
 		insertData();
-		displayEmp();
+		//displayEmp();
+		update();
 	}
 }
