@@ -12,6 +12,7 @@ public class Prime {
 			if(j/i==0)
 			{
 				prime=0;break;
+			
 			}
 			
 		}
