@@ -1,4 +1,4 @@
-package com.vtalent.chaitanya;
+package src.com.vtalent.chaitanya;
 
 import java.util.Scanner;
 

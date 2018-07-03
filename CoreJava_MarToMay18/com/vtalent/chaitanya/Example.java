@@ -1,4 +1,4 @@
-package com.vtalent.chaitanya;
+package src.com.vtalent.chaitanya;
 
 public class Example {
 

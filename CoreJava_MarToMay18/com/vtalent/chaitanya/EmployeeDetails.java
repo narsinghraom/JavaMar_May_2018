@@ -1,4 +1,4 @@
-package com.vtalent.chaitanya;
+package src.com.vtalent.chaitanya;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class EmployeeDetails {
 	int eid;
 	double esalary;
 	long emobile;
-	static Employee[] empArray = new Employee[100];
+	static Employee[]empArray = new Employee[100];
 
 	public static void insertData() {
 		for (int i = 0; i <= empArray.length - 1; i++) {
