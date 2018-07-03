@@ -1,4 +1,4 @@
-package src.com.vtalent.swathi;
+package com.vtalent.swathi;
 
 public class Add {
 
