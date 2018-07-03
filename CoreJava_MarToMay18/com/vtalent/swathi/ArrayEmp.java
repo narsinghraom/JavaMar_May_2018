@@ -1,4 +1,4 @@
-package com.vtalent.swathi;
+package src.com.vtalent.swathi;
 import java.util.Scanner;
 
  class ArrayEmp {
@@ -44,10 +44,21 @@ import java.util.Scanner;
 					 {
 						 System.out.println(emp.eid+" "+emp.esalary+" "+emp.emobile);
 					 }
+					 Scanner sc1=new Scanner(System.in);
+					 System.out.println("enter the id");
+					 int id=sc.nextInt();
+					 
+					 
+					emp.esalary=emp.esalary+5000;
+					
+					
+						 System.out.println(emp.eid+" "+emp.esalary+" "+emp.emobile);
+					 
+					
 						 
 					 
 				 }
-
+ 
 		}
 				 public static void main(String args[])
 				 {

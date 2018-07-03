@@ -1,7 +1,5 @@
 package com.vtalent.chaitanya;
 
-
-
 	class Employee {
 	int eid;
 	double esalary;
