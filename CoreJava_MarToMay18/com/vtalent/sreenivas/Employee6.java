@@ -14,7 +14,7 @@ public class Employee6
 		for(int i=0;i<=emparray.length-1;i++)
 		{
 			Employee emp=new Employee();
-			emp.empid=50+i;
+			emp.empid=100+i;
 			//emp.empsal=20000*(5*i);
 			emp.empsal=20000*(5*i);
 			emp.emobile=888633823+(i*2);
@@ -30,7 +30,7 @@ public class Employee6
 			Scanner s=new Scanner(System.in);
 			System.out.println("enter the employee id");
 			int empid=s.nextInt();
-			if(empid==50+i)
+			if(empid==100+i)
 			{
 				System.out.println(emp.empid+" "+emp.empsal+" "+emp.emobile);
 			}

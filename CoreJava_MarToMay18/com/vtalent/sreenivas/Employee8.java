@@ -17,15 +17,25 @@ public class Employee8 {
 			emp.salary=2500+(i*2);
 			emp.mobile=888633+(i*2);
 			emparray[i]=emp;
+			
 		}
+		displayData();
 	}
  public static void displayData()
  {
 	 for(int i=0;i<=emparray.length-1;i++)
 	 {
+		 if(null!=emparray[i]){
 		 Employee8 emp=(Employee8)emparray[i];
 		 System.out.print("the data is displayed:");
 		 System.out.println(emp.empid+" "+emp.salary+" "+emp.mobile);
+		/* if(null!=emparray[i])
+		 {
+			 System.out.println("data is deleted");
+		 }
+		 else{System.out.println("not deleted");}
+		 }*/
+	 }
 	 }
  }
  public static void updateData()
@@ -54,7 +64,7 @@ public class Employee8 {
 	 Scanner s=new Scanner(System.in);
 	System.out.println("enter the employee id");
 	 int empid=s.nextInt();
-	 for(int i=0;i<emparray.length-1;i++)
+	 for(int i=0;i<=emparray.length-1;i++)
 	 {
 		 Employee8 emp=(Employee8)emparray[i];
 		 if(empid==emp.empid)
@@ -65,10 +75,10 @@ public class Employee8 {
 			//System.out.println("print the empsalary and mobile is:"+emp.salary+" "+emp.mobile);
 	       emparray[i]=null;
 	        System.out.println("one employee is deleted");
-	        System.out.println("the employee id is:"+emp.empid);
+	       /* System.out.println("the employee id is:"+emp.empid);
 			System.out.println("the employee salary is:"+emp.salary);
-			System.out.println("the employee mobile is:"+emp.mobile);
-	       //displayData();
+			System.out.println("the employee mobile is:"+emp.mobile);*/
+	       displayData();
 		 } 
 		 }
 	 }
@@ -77,13 +87,16 @@ public class Employee8 {
 	 Scanner s=new Scanner(System.in);
 	 System.out.println("enter the employee id");
 	 int empid1=s.nextInt();
-	 for(int i=0;i<emparray.length-1;i++)
+	 for(int i=0;i<=emparray.length-1;i++)
 	 {
+		 if(null!=emparray[i]){
 		 Employee8 emp=(Employee8)emparray[i];
-		 //if(emp.empid==103)
-		 //{
-			// System.out.println(emp.empid+" "+emp.salary+" "+emp.mobile);
-	// }
+		if(emp.empid==empid1)
+		 {
+			 System.out.println(emp.empid+" "+emp.salary+" "+emp.mobile);
+			 break;
+	 }
+		 }
 
 	 }
 	 //displayData();
@@ -97,10 +110,10 @@ public class Employee8 {
 		System.out.println("options");
 		
 		System.out.println("1.insert employee");
-		System.out.println("2.update employee");
-		System.out.println("3.delete employee");
-		System.out.println("4.search employee");
-		System.out.println("5.displayall employee");
+		System.out.println("2.displayall employee");
+		System.out.println("3.update employee");
+		System.out.println("4.delete employee");
+		System.out.println("5.search data");
 		System.out.println("6.exit employee");
 		
 		Scanner s=new Scanner(System.in);
