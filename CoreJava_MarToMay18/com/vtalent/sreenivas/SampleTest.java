@@ -15,7 +15,6 @@ public class SampleTest {
 		System.out.println(st.f1);
 		System.out.println(st.f2);
 		System.out.println(st.i);
-
 	}
 
 }
