@@ -1,4 +1,5 @@
-package src.com.vtalent.karunya;
+
+                                                                                                                                                                                                                    package src.com.vtalent.karunya;
 
 import java.util.Scanner;
 
@@ -157,7 +158,8 @@ public class Employee6 {
 				}
 				}
 			}
-		}
+		
+}
 		
 		
 		
