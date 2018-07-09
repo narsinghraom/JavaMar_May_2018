@@ -40,6 +40,8 @@ package com.vtalent.branch.sowmya;
 			int temp=sc.nextInt();
 			Employee1 emp=(Employee1)emparray[i];
 			emp.empsal=temp;
+//	updating value		emparray[i]=emp;
+//			emparray[i]=null;
 				System.out.println(emp.empid+" "+emp.empsal+" "+emp.emobile);
 			}
 		}
