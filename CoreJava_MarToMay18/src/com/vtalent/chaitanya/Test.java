@@ -4,7 +4,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		First f = new First();
-		f.function(2);
+		f.function(5);
 		System.out.println(f.i);
 		System.out.println(f.j);
 		Second s = new Second();

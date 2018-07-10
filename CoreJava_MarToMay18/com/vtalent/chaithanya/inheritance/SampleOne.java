@@ -1,7 +1,7 @@
-package src.com.vtalent.chaitanya;
+package com.vtalent.chaithanya.inheritance;
 
-public class SampleOne
-{
+public class SampleOne {
+
 	float f1,f2;
 	public void function(float f1)
 	{
@@ -12,5 +12,4 @@ public class SampleOne
 		this.f1=this.f1+f1;
 		this.f2=this.f2+f2;
 	}
-
 }

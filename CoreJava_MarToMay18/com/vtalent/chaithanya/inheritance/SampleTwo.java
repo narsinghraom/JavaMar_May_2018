@@ -1,6 +1,6 @@
-package src.com.vtalent.chaitanya;
+package com.vtalent.chaithanya.inheritance;
 
-class SampleTwo extends SampleOne
+public class SampleTwo extends SampleOne
 {
 	int i;
 	float f1;
