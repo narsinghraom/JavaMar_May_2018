@@ -3,11 +3,7 @@ package com.vtalent.chaithanya.inheritance;
 public class SampleTest {
 	public static void main(){
 	SampleThree st5=new SampleThree();//1
-	//SampleTwo st=new SampleThree();//2
-	//SampleOne st1=new SampleTwo();//3
-	//SampleOne st2=new SampleThree();//4
-	//SampleOne st3=new SampleOne();//5
-	//SampleTwo st4=new SampleTwo();//6
+	
 	
 	/*st.function(25, 1.5f);
 	st.function((int)st.l);
