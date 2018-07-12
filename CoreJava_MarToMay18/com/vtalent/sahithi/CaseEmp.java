@@ -5,6 +5,7 @@ public class CaseEmp
 	int eId;
 	double eSalary;
 	long eMobile;
+	static Scanner sa=new Scanner(System.in);
 	static CaseEmp[] empArray=new CaseEmp[4];
 	public static void insertData(){
 		for(int i=0;i<=empArray.length-1;i++)
@@ -14,26 +15,27 @@ public class CaseEmp
 			emp.eSalary=2500*(10+i);
 			emp.eMobile=70754435+(i*2);
 			empArray[i]=emp;
-			System.out.println("Id="+emp.eId +" "+"Salary="+emp.eSalary +" "+"Mobile="+emp.eMobile);
+			//System.out.println("Id="+emp.eId +" "+"Salary="+emp.eSalary +" "+"Mobile="+emp.eMobile);
+			System.out.println("data inserted");
 		}
 		
 	}
 	
 	public static void Update(){
-		Scanner sc1=new Scanner(System.in);
+		
 		System.out.println("enter eId");
-		int tempeId=sc1.nextInt();
+		int tempeId=sa.nextInt();
 		for(int i=0;i<=empArray.length-1;i++)
 		{
 			CaseEmp emp=(CaseEmp)empArray[i];
 			if(tempeId==emp.eId)
 			{
-				Scanner sc2=new Scanner(System.in);
-				System.out.println("enter esalary");
-				emp.eSalary=sc2.nextDouble();
-				Scanner sc3=new Scanner(System.in);
-				System.out.println("enter eMobile");
-				emp.eMobile=sc3.nextLong();
+				
+				System.out.println("Id="+emp.eId +" "+"Salary="+emp.eSalary +" "+"Mobile="+emp.eMobile);
+				
+				System.out.println("enter esalary to update");
+				double salary=sa.nextDouble();
+				emp.eSalary=salary;
 				
 				empArray[i]=emp;
 				System.out.println("Id="+emp.eId +" "+"Salary="+emp.eSalary +" "+"Mobile="+emp.eMobile);
@@ -42,49 +44,72 @@ public class CaseEmp
 		}}
 	public static void Delete()
 	{
-		Scanner sc=new Scanner(System.in);
+		
 		System.out.println("enter eId");
-		int tempeId=sc.nextInt();
+		int temp=sa.nextInt();
 		for(int i=0;i<=empArray.length-1;i++)
 		{
 			CaseEmp emp=(CaseEmp)empArray[i];
-			if(tempeId==emp.eId)
+			if(emp.eId==temp)
 			{
-				System.out.println("Id="+emp.eId +" "+"Salary="+emp.eSalary +" "+"Mobile="+emp.eMobile);
+				
+				
 				empArray[i]=null;
+				
+				break;
 	}
-		}
+	}
 	}
 	public static void Search()
 	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("enter eId");
-		int tempeId=sc.nextInt();
 		for(int i=0;i<=empArray.length-1;i++)
-		{
+		
+	{
+		
+		System.out.println("enter eId");
+		int temp1=sa.nextInt();
+		
 			CaseEmp emp=(CaseEmp)empArray[i];
-			if(tempeId==emp.eId)
+			if(emp.eId==temp1)
 			{
-				System.out.println("Id="+emp.eId +" "+"Salary="+emp.eSalary +" "+"Mobile="+emp.eMobile);
-				
+				System.out.println("Id="+emp.eId +" "+"Salary="+emp.eSalary +" "+"Mobile="+emp.eMobile);	
+			
 	}
 			
-		}
 	}
+	}
+	public static void displayAllEmp()
+	{
+		for(int i=0;i<=empArray.length-1;i++)
+		{
+			if(null!=empArray[i])
+			{
+				
+				CaseEmp emp=(CaseEmp)empArray[i];
+
+			System.out.println("Id="+emp.eId +" "+"Salary="+emp.eSalary +" "+"Mobile="+emp.eMobile);
+			}
+	}
+	}
+		
+	
 	public static void main(String args[])
 	{
 		
-		CaseEmp c=new CaseEmp();
-		System.out.println("select one choice");
+		
+		System.out.println("choices");
 		System.out.println("1:insert Emp");
 		System.out.println("2:Update Emp");
 		System.out.println("3:Delete Emp");
 		System.out.println("4:Search Emp");
 		System.out.println("5:Display all Emp");
 		System.out.println("6:Exit");
-		Scanner sc=new Scanner(System.in);
+		for(int j=1;j!=6?true:false;)
+		{
+		
 		System.out.println("enter your choice");
-		int k=sc.nextInt();
+		int k=sa.nextInt();
+		
 	switch(k)
 	{
 	case 1:
@@ -99,11 +124,16 @@ public class CaseEmp
 	case 4:
 		Search();
 		break;
+	case 5:
+		displayAllEmp();
+		break;
+	default :
+		j=6;
+		
 	
 	}
-		}
-	
+	}	
 	
 	}
-	
+	}
 	
