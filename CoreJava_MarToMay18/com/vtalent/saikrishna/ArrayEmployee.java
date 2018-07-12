@@ -7,10 +7,27 @@ public class ArrayEmployee
 	int empid;
 	double esal;
 	long emobile;
-	public static void setEmpArray(ArrayEmployee[] empArray) {
-		ArrayEmployee.empArray = empArray;
+	public int getEmpid() {
+		return empid;
 	}
-	static ArrayEmployee[] empArray=new ArrayEmployee[4];
+	public void setEmpid(int empid) {
+		this.empid = empid;
+	}
+	public double getEsal() {
+		return esal;
+	}
+	public void setEsal(double esal) {
+		this.esal = esal;
+	}
+	public long getEmobile() {
+		return emobile;
+	}
+	public void setEmobile(long emobile) {
+		this.emobile = emobile;
+	}
+
+	
+	/*static ArrayEmployee[] empArray=new ArrayEmployee[4];
 	public static void insertData()
 	{
 		for(int i=0;i<=empArray.length-1;i++)
@@ -46,7 +63,6 @@ public class ArrayEmployee
 				 System.out.println("id="+ae.empid+" sal="+ae.esal+" mobile="+ae.emobile);
 			 }
 		 }
-		
 	}
 	public static void main(String[] args) 
 	{
@@ -55,5 +71,5 @@ public class ArrayEmployee
 		ArrayEmployee ae=new ArrayEmployee();
 		ae.show();
 	//	ae.show();
-	}
+	}*/
 }
