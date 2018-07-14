@@ -11,6 +11,7 @@ public class SreenuIt1 implements It1
     {
 		f=pi+f;
 		System.out.println(f);
+		//System.out.println(f);
 		}
 }
 

@@ -6,5 +6,6 @@ public interface It1
 	float pi=3.14f;
 	void function(int i);
 	void function(float f);
+	//void function(Double d);
 	}
 

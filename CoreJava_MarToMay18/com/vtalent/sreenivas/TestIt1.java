@@ -8,8 +8,8 @@ public class TestIt1 {
 		s.function(2);
 		s.function(1.5f);
 		System.out.println(It1.k);
+		//System.out.println(k);
 		System.out.println(It1.pi);
-
 	}
 
 }
