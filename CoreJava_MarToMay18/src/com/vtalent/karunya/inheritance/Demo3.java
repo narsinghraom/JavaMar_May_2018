@@ -12,7 +12,7 @@ public class Demo3 {
 		//System.out.println(s21.i);
 		System.out.println(s21.f2);
 	  }
-	}
+}
 
 
 
