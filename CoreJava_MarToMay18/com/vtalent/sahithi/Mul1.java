@@ -1,7 +1,7 @@
 package com.vtalent.sahithi;
 
 public class Mul1 {
-	public static void main(String args[])
+	public static void main(Strng args[])
 	{
 		Mull m=new Mull();
 		m.function(3);

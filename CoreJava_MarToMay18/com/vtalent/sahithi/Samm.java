@@ -1,7 +1,7 @@
 package com.vtalent.sahithi;
 
 public class Samm {
-	public static void main(String args[])
+	public static void main(Strng args[])
 	{
 		Samm1 s=new Samm2();
 		s.function(20,1.2f);

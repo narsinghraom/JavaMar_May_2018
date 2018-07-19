@@ -1,7 +1,7 @@
 package com.vtalent.sahithi;
 
 public class Prime {
-	public static void main(String args[])
+	public static void main(Strng args[])
 	{
 		int i,j,prime;
 		for(i=1;i<10;i++)

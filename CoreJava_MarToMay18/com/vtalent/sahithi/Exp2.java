@@ -1,7 +1,7 @@
 package com.vtalent.sahithi;
 
 public class Exp2 {
-	public static void main(String args[])
+	public static void main(Strng args[])
 	{
 		Exp1 e1=new Exp1();
 		e1.function(2);
